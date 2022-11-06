@@ -35,8 +35,6 @@ Servlet上下文，每一个Java Web Application 中有且仅有一个，在war�
 > https://www.javatpoint.com/servletcontext
 
 
-
-
 ### Servlet 生命周期
 > https://www.javatpoint.com/life-cycle-of-a-servlet
 
@@ -68,6 +66,13 @@ public class HelloServlet extends HttpServlet {
 ```
 
 #### 过滤器匹配请求
+
+### Servlet API
+
+#### getParameter
+Servlet API的 `getParameter` 接口，只支持获得GET请求的query参数 或者是 POST请求的from-data参数。
+但是对于PUT/DELETE/PATCH 类型，则无法处理。
+
 
 
 ### Web.xml
